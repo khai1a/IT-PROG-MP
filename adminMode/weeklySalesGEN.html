@@ -1,0 +1,39 @@
+<html>
+
+<head>
+    <title>Date Selection</title>
+    <link rel="stylesheet" href="adminLooks.css">
+</head>
+
+<body>
+
+    <form action="weeklySalesGEN.php" method="POST">
+        <label>Select the date to check FROM: </label>
+        <input type="date" name="DateFrom">
+        <br> <br>
+
+        <label>Select the date to check TO: (pick the same value if you want to check the same day)</label>
+        <input type="date" name="DateTo">
+
+        <br><br>
+        <div class="pageButtons">
+            <button type="submit" class="confirmButton">Confirm</button>
+        </div>
+    </form>
+    <table class="table">
+        <tr> <th>Or just show them all?</th> </tr>
+        <tr class="mainRow">
+            <td>
+            <a href="weeklySalesGEN.php?showAll=1">
+                <button type="button" class="editButton">Show All</button>
+            </a>
+            </td>
+        </tr>
+    </table>
+    <br><br>
+    <div class="pageButtons">
+        <a href="adminNavigator.html" class="toPagesButton">Back</a>
+    </div>
+</body>
+
+</html>

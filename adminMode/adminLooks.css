@@ -1,0 +1,270 @@
+@font-face {
+    src: url(../fonts/Lulucon-Regular.ttf);
+    font-family: 'Lulucon';
+}
+
+@font-face {
+    font-family: 'Gagalin';
+    src: url(../fonts/Gagalin-Regular.otf);
+}
+
+@font-face {
+    font-family: 'BelleBold';
+    src: url(../fonts/BelleBold.ttf);
+}
+
+@font-face {
+    font-family: 'CandyShop';
+    src: url(../fonts/Candyshop.ttf);
+}
+
+@font-face {
+    font-family: 'SimpleHand';
+    src: url(../fonts/SimpleHandmade.otf);
+}
+
+@font-face {
+    font-family: 'MorningBright';
+    src: url(../fonts/Morning\ Bright.otf);
+}
+
+body {
+    background-color: #f1e8b1;
+}
+
+.icon {
+    width: 100px;
+}
+
+.smallcon {
+    width: 50px;
+}
+
+.button {
+    border: none;
+    color: black;
+    text-align: center;
+    padding: 3px;
+    width: fit-content;
+}
+
+.popup {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.table {
+    text-align: center;
+    width: 100%;
+    background-color: #ffeaf4;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.toTheLeft {
+    text-align: left;
+    width: 100%;
+}
+
+.toTheRight {
+    text-align: right;
+    width: 100%;
+}
+
+.th {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.mainRow:nth-child(even) {
+    background-color: #ffd2e8;
+}
+
+.subth.hidden {
+    color: rgba(255, 255, 255, 0);
+}
+
+html {
+    font-family: "SimpleHand";
+    font-size: 20px;
+    color: #473a1b;
+}
+
+input {
+    font-family: "SimpleHand";
+    font-size: 20px;
+}
+
+th {
+    background-color: #473a1b;
+    color: #ffbbdc;
+    font-size: 18px;
+    font-family: "MorningBright";
+}
+
+td {
+    font-size: 20px;
+    width: fit-content;
+}
+
+a {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+button {
+    font-family: "MorningBright";
+    font-size: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+textarea {
+    resize: none;
+    font-family: "SimpleHand";
+}
+
+.createButton {
+    border-radius: 5%;
+    border-width: 0px;
+    background-color: #009e00;
+    color: #92fc90;
+    transition: 0.3s;
+}
+
+.createButton:hover {
+    background-color: #b1f423;
+    color: white;
+    transition: 0.3s;
+}
+
+.editButton {
+    border-radius: 5%;
+    border-width: 0px;
+    background-color: #b31498;
+    color: #ffbbdc;
+    transition: 0.3s;
+}
+
+.editButton:hover {
+    background-color: #ff7ae9;
+    color: white;
+    transition: 0.3s;
+}
+
+.deleteButton {
+    border-width: 0px;
+    border-radius: 5%;
+    background-color: #b36414;
+    color: #ffc5bb;
+    transition: 0.3s;
+}
+
+.deleteButton:hover {
+    color: white;
+    background-color: #ffc890;
+    transition: 0.3s;
+}
+
+.confirmButton {
+    font-family: 'Gagalin';
+    align-items: center;
+    border-width: 0px;
+    border-radius: 5%;
+    font-size: 18px;
+    background-color: #07ad15;
+    color: #cbf97d;
+    padding: 10px 15px;
+    transition: 0.3s;
+}
+
+.confirmButton:hover {
+    color: white;
+    background-color: #b6de28;
+    padding: 20px 25px;
+    transition: 0.3s;
+}
+
+.pageButtons {
+    display: flex;
+    align-items: center;
+}
+
+.toPagesButton {
+    background-color: #daa836;
+    color: rgb(255, 255, 255);
+    font-family: 'Gagalin';
+    font-size: 18px;
+    width: fit-content;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 5%;
+}
+
+.toPagesButton.mainMenu {
+    display: block;
+    margin: auto;
+    font-size: 40px;
+    padding: 15px 20px;
+}
+
+.toPagesButton.mainMenu:hover,
+:active {
+    padding: 20px 35px;
+}
+
+.toPagesButton:link,
+:visited {
+    transition: 0.3s;
+}
+
+.toPagesButton:visited {
+    background-color: #a67a12;
+    color: rgb(255, 193, 245);
+
+}
+
+.toPagesButton:hover,
+:active {
+    color: white;
+    padding: 14px 30px;
+}
+
+.toPagesButton:hover {
+    background-color: #eed533;
+    transition: 0.3s
+}
+
+.toPagesButton:active {
+    background-color: #62fa7e;
+}
+
+.toPagesButton.mainMenu.generatedReports {
+    background-color: #1c1fc6;
+    color: #8eb5f1;
+    transition: 0.1s;
+}
+
+.toPagesButton.mainMenu.generatedReports:visited {
+    background-color: #3c1863;
+    color: #5f87c4;
+    transition: 0.1s;
+}
+
+.toPagesButton.mainMenu.generatedReports:hover {
+    background-color: #64a3eb;
+    color: #ffffff;
+    transition: 0.5s;
+}
+
+.toPagesButton.mainMenu.generatedReports:active {
+    background-color: #62facf;
+}
+
+.salesTBL {
+    text-align: center;
+    background-color: #ffeaf4;
+}
