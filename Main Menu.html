@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karinderia ni Aling BebangKarinderia ni Aling Bebang</title>
+    <link rel="stylesheet" href="Main Menu.css">
+
+</head>
+
+<body>
+    <div>
+    <h1>Karinderia ni Aling Bebang</h1>
+    <br>
+    
+    <a href ="Order Menu.php">
+    <button> Order </button>
+    </a>
+    <br>
+    <br>
+    <br>
+    <!--Added functionality to the Admin Mode button.-->
+    <a href = "adminMode/adminNavigator.html">
+    <button> Admin mode </button>
+    </a>
+    <br>
+    <br>
+    <br>
+    <button> Exit </button>
+    </div>
+
+    <img id="music-logo" src="images/audiooff.png" alt="Music Logo" style="width: 100px; cursor: pointer;">
+
+    <audio id="bg-music">
+        <source src="music/Bg Music.mp3">
+    </audio>
+    
+    <script>
+        let song = document.getElementById("bg-music");
+        let music_logo = document.getElementById("music-logo");
+    
+        music_logo.addEventListener("click", function () {
+            if (song.paused) {
+                music_logo.src ="images/audio.png";
+                song.volume = 0.05;
+                song.play();
+            } else {
+                music_logo.src ="images/audiooff.png";
+                song.pause();
+            }
+        });
+    </script>
+    
+    
+</body>
+</html>

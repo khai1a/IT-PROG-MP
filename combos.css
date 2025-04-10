@@ -1,0 +1,166 @@
+@font-face {
+    src: url(fonts/Gagalin-Regular.otf);
+    font-family: 'gagalin';
+}
+
+body {
+    background-color: #fafaf1;
+    margin: 0px;
+}
+
+#topbox {
+    height: 28vh;
+    background-color: #fff2dc;
+    border-bottom: 3px solid rgb(114, 113, 113);
+    position: relative;
+}
+
+#current_display {
+    height: 70px;
+    width: 150px;
+    left: -20px;
+    top: 20px;
+    background-color: #a15b24;
+    border-radius: 20px;
+    position: absolute;
+    text-align: center;
+    padding: 20px;
+}
+
+#current_display img {
+    height: 80px;
+}
+
+#aling_bebang {
+    background-image: url(images/aling_bebang.PNG);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 26vh;
+    width: 230px;
+    left: 30%;
+    position: absolute;
+    bottom: 0;
+}
+
+#conversation {
+    background-color: #FFCC80;
+    padding: 15px;
+    border-radius: 10px;
+    display: inline-block;
+    width: 350px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    position: absolute;
+    right: 27%;
+    top: 10%;
+    height: 150px
+}
+
+#combo-list {
+    text-align: center;
+    max-height: 100px;
+    overflow-y: auto;
+    border: 2px solid #C15A29;
+    padding: 5px;
+    border-radius: 10px;
+    height: 45px
+}
+
+.combo-link {
+    display: block;
+    font-size: 20px;
+    font-weight: bold;
+    color: #C15A29;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #FFCC80;
+    margin: 5px auto;
+    width: 80%;
+    transition: 0.3s;
+}
+
+.combo-link:hover, .combo-link.selected {
+    background-color: #FFB74D;
+    box-shadow: 0 0 10px #FFD700;
+}
+
+#midbox {
+    max-height: 500px;
+    height: 55vh;
+    background-color: #e2bea0;
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    overflow-y: auto;
+}
+
+.main_sides, .drinks {
+    width: 180px; 
+    height: 200px; 
+    background-color: white;
+    border: 3px dotted #ffffff;
+    border-radius: 10px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.main_sides img, .drinks img {
+    width: 85%; 
+    height: auto;
+    max-width: 140px; 
+}
+
+.item-name {
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 5px;
+    color: #5a2c02;
+    text-align: center;
+}
+
+.main_sides.glowing, .drinks.glowing {
+    box-shadow: 0 0 50px #d48f00;
+    background-color: #f2c16d;
+}
+
+#lowbox {
+    height: 12vh;
+    background-color: #a15b24;
+    padding: 10px;
+    text-align: center;
+}
+
+#back {
+    height: 75px;
+    width: 125px;
+    position: relative;
+    top: 10px;  
+}
+
+#seperation {
+    background-image: url(images/Seperator.png);
+    background-size: cover;
+    height: 10vh;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    opacity: 0.75;
+}
+
+#music-logo {
+    width: 100px;
+    position: absolute;
+    bottom: 12px; 
+    left: 40px; 
+    cursor: pointer;
+}
+

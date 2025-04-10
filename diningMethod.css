@@ -1,0 +1,168 @@
+@font-face {
+    src: url(fonts/Gagalin-Regular.otf);
+    font-family: 'gagalin';
+}
+
+body {
+    background-color: #fafaf1;
+    margin: 0px;
+}
+
+/* top */
+#topbox {
+    height: 28vh;
+    background-color: #fff2dc;
+    border-bottom: 3px solid rgb(114, 113, 113);
+    position: relative;
+}
+
+/* Dinemtd icon */
+#current_display {
+    height: 70px;
+    width: 150px;
+    left: -20px;
+    top: 20px;
+    background-color: #a15b24;
+    border-radius: 20px;
+    position: absolute;
+    text-align: center;
+    padding: 20px;
+}
+
+#current_display img {
+    height: 80px;
+}
+
+/* aling bebang */
+#aling_bebang {
+    background-image: url(images/aling_bebang.PNG);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 26vh;
+    width: 230px;
+    left: 30%;
+    position: absolute;
+    bottom: 0;
+}
+
+.typewriter{
+    height:18vh;
+    width: 43%;
+    right: 20px;
+    position:absolute;
+    align-items: center;
+    justify-content: center;
+}
+
+.typewriter p{
+    font-size: 30px;
+    top:40px;
+    font-family: gagalin;
+    overflow: hidden;
+    white-space: nowrap;
+    position:relative;
+    animation: typing 2s;
+    color: #cf9829;
+}
+
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+/* mid */
+#midbox {
+    height: 55vh;
+    background-color: #e2bea0;
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.dine-method {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 300px; 
+    margin: 0 auto; 
+}
+
+/* buttons */
+.dine-method button {
+    background: none;
+    border: none;
+    padding: 0px;
+    cursor: pointer;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 450px;
+}
+
+/* button image */
+.dine-method button img {
+    height: 200px;
+    width: 450px;
+    transition: all 0.2s ease-in-out; 
+}
+
+.dine-method button.selected{
+    border: 5px solid #FFD700;
+    box-shadow: 0 0 35px rgba(255, 215, 0, 0.8);
+    transform: scale(1.05);
+    border-radius: 20px;
+    padding: 10 px;
+}
+
+/* button label */
+.dine-method button p {
+    font-size: 30px;
+    margin-top: 5px;
+    font-family: gagalin;
+    color: #a15b24;
+}
+
+.img_button{
+    cursor: pointer;
+    position:absolute;
+}
+
+/* low */
+#lowbox {
+    height: 12vh;
+    background-color: #a15b24;
+    padding: 10px;
+    text-align: center;
+}
+
+/* back icon */
+#back {
+    height: 75px;
+    width: 125px;
+    position: relative;
+    top: 10px;  
+}
+
+/* separation image */
+#seperation {
+    background-image: url(images/Seperator.png);
+    background-size: cover;
+    height: 10vh;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    opacity: 0.75;
+}
+
+/* music icon */
+#music-logo {
+    width: 100px;
+    position: absolute;
+    bottom: 12px; 
+    left: 40px; 
+    cursor: pointer;
+}

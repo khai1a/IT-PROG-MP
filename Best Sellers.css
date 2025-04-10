@@ -1,0 +1,246 @@
+@font-face{
+    src: url(fonts/Gagalin-Regular.otf);
+    font-family: 'gagalin';
+}
+@font-face{
+    src: url(fonts/Candyshop.ttf);
+    font-family: 'Candyshop';
+}
+
+body{
+    background-color: #fafaf1;
+    margin:0px;
+}
+
+#topbox{
+    height: 28vh;
+    margin:0px;
+    flex-wrap: wrap;
+    overflow: visible;
+    position: relative;
+    background-color: #fff2dc;
+    border-bottom: 3px solid rgb(114, 113, 113);
+}
+
+#midbox{
+    margin: 0px;
+    height: 55vh;
+    flex-wrap: wrap;
+    overflow: hidden;
+    text-align: center; 
+    align-items: center; 
+    padding:10px;
+    background-color: #e2bea0;
+    position:relative;
+}
+
+#lowbox{
+    margin: 0px;
+    background-color: #a15b24;
+    height: 12vh;
+    flex-wrap: wrap;
+    overflow: hidden;
+    padding:10px;
+    border-radius:20px;
+    position:relative;
+}
+
+#current_display{
+    height:70px;
+    width:150px;
+    left: -20px;
+    top: 20px;
+    background-color: #a15b24;
+    border-radius:20px;
+    position: absolute;
+    text-align: center;
+    padding: 20px;
+}
+
+#current_display img {
+    height: 80px;
+}
+
+#aling_bebang{
+    background-image: url(images/Aling_bebang.PNG);
+    background-size: 100% 100%;
+    height: 26vh;
+    width: 230px;
+    left:45%;
+    position:absolute;
+    bottom:0;
+}
+
+.typewriter{
+    height:18vh;
+    width: 43%;
+    right: 20px;
+    position:absolute;
+    align-items: center;
+    justify-content: center;
+}
+
+.typewriter p{
+    font-size: 30px;
+    top:40px;
+    font-family: gagalin;
+    overflow: hidden;
+    white-space: nowrap;
+    position:relative;
+    animation: typing 2s;
+    color: #cf9829;
+}
+
+.typewriter p::after{
+    content:"";
+    position: absolute;
+    height: 100%;
+    width:1px;
+    background: #ffffff;
+    right:0;
+    top:0;
+    animation: cursor 1s infinite;
+}
+
+
+#seperation{
+    background-image: url(images/Seperator.png);
+    background-size: 100% 100%;
+    height: 10vh;
+    width: 100%;
+    position: absolute;
+    bottom:0;
+    opacity: 0.75;
+}
+
+#music-logo{
+    width:100px;
+    left: 40px;
+    top: 20px;
+}
+
+#back{
+    left: 47%;
+    height: 75px;
+    width: 125px;
+    top: 30px;
+}
+
+.main_sides{
+    height: 190px;
+    width: 315px;
+    margin: 5px;
+    background-image: url(images/Tray.png);
+    background-size: cover;
+    flex-wrap: wrap;
+    overflow: hidden;
+    position:relative;
+    display: inline-block;
+    border: 3px dotted #ffffff;
+}
+
+.drinks{
+    height: 190px;
+    width: 157.5px;
+    margin: 5px;
+    flex-wrap: wrap;
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+    border: 3px dotted #ffffff; 
+}
+
+.img_button{
+    cursor: pointer;
+    position:absolute;
+}
+
+.img_button:hover{
+    animation-name:growshrink;
+    animation-duration: 0.5s;
+}
+
+.item_button_main_sides{
+    cursor: pointer;
+    position:absolute;
+    height: 120px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.item_button_drinks{
+    cursor: pointer;
+    position:absolute;
+    height: 150px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#left_side{
+    height: 100%;
+    width: 50%;
+    flex-wrap: wrap;
+    overflow: visible;
+    position: relative;
+    display: inline-block;
+    
+}
+#right_side{
+    height: 100%;
+    width: 50%;
+    flex-wrap: wrap;
+    overflow: visible;
+    position: relative;
+    display: inline-block;
+}
+
+#separator {
+    width: 8px;
+    height: 100%;
+    background-color: #ffbd59;
+    border-left: solid #fff0c7;
+    border-right: solid #fff0c7;
+    position: absolute;
+    transform: translateX(-7px); 
+    left: 50%;
+    top: 0;
+}
+
+h2 {
+    margin: 10px;
+    color: #ffffff;
+    font-family: Candyshop;
+    font-size: 40px;
+}
+
+@keyframes growshrink{
+    50%{transform: scale(1.1,1.1);}
+}
+
+@keyframes glow{
+    50%{box-shadow: 0px 0px 50px #ffbd59;}
+}
+
+@keyframes typing{
+    from{width: 0}
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes cursor{
+    0%{
+        opacity:1;
+    }
+    50%{
+        opacity:0;
+    }
+    100%{
+        opacity:1;
+    }
+}
+
+
+

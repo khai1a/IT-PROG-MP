@@ -1,0 +1,37 @@
+@font-face{
+    src: url(fonts/Candyshop.ttf);
+    font-family: 'Candyshop';
+}
+
+body{
+    background-color: #fafaf1;
+}
+
+div{
+    color: #ffbd59;
+    font-family: Candyshop;
+    font-size: 30px;
+    text-align: center;
+}
+
+button{
+    color: #ffbd59;
+    font-family: Candyshop;
+    border: 3px dotted #ffbd59;
+    background-color: #fafaf1;
+    font-size: 50px;
+}
+button:hover{
+    animation: glow 1s infinite alternate;
+}
+
+img{
+    border: 3px dotted #ffbd59;
+}
+
+img:hover{
+    animation: glow 1s infinite alternate;
+}
+@keyframes glow{
+    50%{box-shadow: 0px 0px 50px #ffbd59;}
+}
