@@ -4,7 +4,7 @@ include("dbConnect.php");
 
 if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["method"])) {
     $newDiningMethod = $_POST["method"];
-    $_SESSION['diningMethod'] = $newDiningMethod;  // Store the method in the session
+    $_SESSION['diningMethod'] = $newDiningMethod;
     
     // Redirect to paymentMethod.php
     header("Location: paymentMethod.php");
@@ -86,22 +86,18 @@ logo.addEventListener("click", function () {
 });
 
 function selectMethod(method) {
-    // Save the selected dining method in localStorage
     localStorage.setItem("selectedDiningMethod", method); 
 
-    // Remove 'selected' class from all buttons
     document.querySelectorAll(".dine-method button").forEach(btn => {
         btn.classList.remove("selected");
     });
 
-    // Find the selected button and highlight it
     document.querySelectorAll(".dine-method button").forEach(btn => {
         if (btn.querySelector("p").innerText.trim() === method) {
             btn.classList.add("selected");
         }
     });
 
-    // Submit the form to store the selected dining method
     let form = document.createElement("form");
     form.method = "POST";
     form.action = "diningMethod.php";
@@ -117,7 +113,6 @@ function selectMethod(method) {
 }
 
 window.onload = function () {
-    // Fetch the dining method from localStorage and highlight the button
     let selectedDiningMethod = localStorage.getItem("selectedDiningMethod");
     if (selectedDiningMethod) {
         document.querySelectorAll(".dine-method button").forEach(btn => {
