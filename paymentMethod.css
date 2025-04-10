@@ -95,7 +95,7 @@ body {
     width: 700px;
     left: 5%;
     margin-top: 100px;
-    overflow-y: auto; /* Enables vertical scrolling */
+    overflow-y: auto;
     border: 1px solid #a15b24;
 }
 
@@ -118,13 +118,13 @@ body {
 
 .payment {
     display: flex;
-    justify-content: flex-end; /* Aligns buttons to the right */
+    justify-content: flex-end; 
     align-items: center;
     position: absolute;
-    top: 300px; /* Adjust as needed */
+    top: 300px; 
     right: 5%;
-    flex-direction: row; /* Keeps buttons in a row */
-    gap: 50px; /* Space between buttons */
+    flex-direction: row; 
+    gap: 50px; 
 }
 
 /* Buttons */
@@ -134,7 +134,7 @@ body {
     cursor: pointer;
     text-align: center;
     display: flex;
-    flex-direction: column; /* Stacks image and label */
+    flex-direction: column; 
     align-items: center;
     max-width: 450px;
 }
