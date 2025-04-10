@@ -12,7 +12,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $conn->begin_transaction();
 
     try {
-        // Insert sale record
         $sql = "INSERT INTO salestbl (TotalRaw, TotalDiscounted, PaymentMethod, DiningMethod, SaleDate)
                 VALUES (?, ?, ?, ?, NOW())";
         $stmt = $conn->prepare($sql);
@@ -20,7 +19,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $stmt->execute();
         $sales_id = $conn->insert_id;
 
-        // Prepare order insert statement
         $order_sql = "INSERT INTO ordertbl (SalesID, MenuID, qty) VALUES (?, ?, ?)";
         $order_stmt = $conn->prepare($order_sql);
 
